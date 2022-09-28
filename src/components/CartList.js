@@ -11,7 +11,7 @@ function CartList({ cart }) {
     }, [cart])
 
     return (
-        <div>
+        <div className='container text-center mt-5'>
             {
                 CART?.map((cartItem, cartindex) => {
                     return (
@@ -43,13 +43,13 @@ function CartList({ cart }) {
                 })
             }
 
-            <p className='mt-5 text-center'> Total  <span></span>
-            <div style={{padding:'10px', backgroundColor:'#61dafb', margin:'20px', borderRadius:'15px', width:'50%', align:'center'}}>
+            <div className='mt-5 text-center' style={{padding:'10px', backgroundColor:'#61dafb', margin:'20px', borderRadius:'15px', width:'50%', alignItems:'center'}}>
+            <p > Total  <span></span>
                 {
                     CART.map(item => item.price * item.quantity).reduce((total, value) => total + value, 0)
                 }
-            </div>
             </p>
+            </div>
         </div >
     )
 }

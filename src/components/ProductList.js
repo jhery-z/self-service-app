@@ -5,8 +5,8 @@ import Container from 'react-bootstrap/Container';
 
 function ProductList({ product,addToCart }) {
     return (
-        <Container>
-        <div className='flex'>
+        
+        <div className='container flex mt-5'>
             {
                 product.map((productItem, productIndex) => {
                     return (
@@ -29,7 +29,7 @@ function ProductList({ product,addToCart }) {
                 })
             }
         </div>
-        </Container>
+        
     )
 }
 
