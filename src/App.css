@@ -1,10 +1,24 @@
 .App {
-  text-align: center;
+  /* background: url(../images/bg.jpg) no-repeat center center fixed; */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.shopping-card {
+  justify-content: space-between;
+  background-color: #61dafb;
+  padding: 20px 30px;
+}
+
+.product-item {
+  padding: 20px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -13,15 +27,16 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.App-body {
+  background-color: #fcfdfd;
+}
+
+.nav-link, .navbar-toggler, .navbar-brand, .navbar-toggler-icon{
+  color:rgb(255, 255, 255);
+}
+
+.bg-nav {
+  background-color: #61dafb;
 }
 
 .App-link {
