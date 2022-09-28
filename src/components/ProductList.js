@@ -6,12 +6,13 @@ import Container from 'react-bootstrap/Container';
 function ProductList({ product,addToCart }) {
     return (
         
-        <div className='container flex mt-5'>
+        <div className='container mt-5'>
+        <div className='flex mt-5'>
             {
                 product.map((productItem, productIndex) => {
                     return (
-                        <div className='row mt-5 justify-content-center'>
-                        <div className='col-lg-4 col-12' style={{ width: '44%' }}>
+                        <div className='row mt-5 justify-center'>
+                        <div className='col-lg-4 col-md-6 col-12'>
                             <div className='product-item'>
                             <Card style={{ width: '18rem' }}>
                             <Card.Img variant="top" src={productItem.url} width="100%" height="200px" />
@@ -29,6 +30,7 @@ function ProductList({ product,addToCart }) {
                 })
             }
         </div>
+    </div>
         
     )
 }
